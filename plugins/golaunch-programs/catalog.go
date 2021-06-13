@@ -3,15 +3,17 @@ package main
 import (
 	"encoding/json"
 	// "fmt"
-	sdk "golaunch/sdk/go"
-	"golaunch/sdk/go/fuzzy"
-	"golaunch/sdk/go/system"
 	"log"
 	"os"
 	"path/filepath"
 	"sort"
 	"strings"
 	"sync"
+
+	sdk "github.com/kdar/golaunch/sdk/go"
+	"github.com/kdar/golaunch/sdk/go/fuzzy"
+	"github.com/kdar/golaunch/sdk/go/system"
+
 	// "time"
 
 	"github.com/MichaelTJones/walk"

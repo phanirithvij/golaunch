@@ -3,7 +3,6 @@ package system
 import (
 	"bytes"
 	"encoding/base64"
-	"golaunch/sdk/go/extracticon"
 	"image"
 	"image/png"
 	"log"
@@ -14,8 +13,10 @@ import (
 	"syscall"
 	"unicode/utf16"
 
-	"github.com/mattn/go-ole"
-	"github.com/mattn/go-ole/oleutil"
+	"github.com/kdar/golaunch/sdk/go/extracticon"
+
+	"github.com/go-ole/go-ole"
+	"github.com/go-ole/go-ole/oleutil"
 	"golang.org/x/sys/windows/registry"
 )
 

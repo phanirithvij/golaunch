@@ -2,8 +2,9 @@ package plugin
 
 import (
 	"encoding/json"
-	"golaunch/sdk/go"
 	"os"
+
+	sdk "github.com/kdar/golaunch/sdk/go"
 )
 
 type Plugin interface {

@@ -1,5 +1,6 @@
 #SHELL=C:/Windows/System32/cmd.exe
-SHELL=D:/dev/msys64/usr/bin/bash.exe
+#SHELL=D:/dev/msys64/usr/bin/bash.exe
+SHELL=bash.exe
 VERSION=$(shell node -e "console.log(require('./package.json').version);")
 
 watch:

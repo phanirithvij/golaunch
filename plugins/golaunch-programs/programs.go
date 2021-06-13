@@ -1,14 +1,15 @@
 package main
 
 import (
-	sdk "golaunch/sdk/go"
-	"golaunch/sdk/go/idletime"
-	"golaunch/sdk/go/plugin"
-	"golaunch/sdk/go/system"
 	"log"
 	"os"
 	"path/filepath"
 	"time"
+
+	sdk "github.com/kdar/golaunch/sdk/go"
+	"github.com/kdar/golaunch/sdk/go/idletime"
+	"github.com/kdar/golaunch/sdk/go/plugin"
+	"github.com/kdar/golaunch/sdk/go/system"
 
 	"github.com/BurntSushi/toml"
 	"github.com/atotto/clipboard"

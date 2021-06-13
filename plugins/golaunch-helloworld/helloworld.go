@@ -1,10 +1,11 @@
 package main
 
 import (
-	sdk "golaunch/sdk/go"
-	"golaunch/sdk/go/plugin"
 	"log"
 	"os"
+
+	sdk "github.com/kdar/golaunch/sdk/go"
+	"github.com/kdar/golaunch/sdk/go/plugin"
 )
 
 type Plugin struct {

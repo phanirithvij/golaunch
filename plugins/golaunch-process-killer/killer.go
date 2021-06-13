@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
-	sdk "golaunch/sdk/go"
-	"golaunch/sdk/go/fuzzy"
-	"golaunch/sdk/go/plugin"
-	"golaunch/sdk/go/system"
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
+
+	sdk "github.com/kdar/golaunch/sdk/go"
+	"github.com/kdar/golaunch/sdk/go/fuzzy"
+	"github.com/kdar/golaunch/sdk/go/plugin"
+	"github.com/kdar/golaunch/sdk/go/system"
 
 	"github.com/mozilla/masche/process"
 	"github.com/spf13/cast"

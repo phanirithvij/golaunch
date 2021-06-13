@@ -3,13 +3,14 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	sdk "golaunch/sdk/go"
-	"golaunch/sdk/go/plugin"
 	"io"
 	"log"
 	"os"
 	"os/exec"
 	"strings"
+
+	sdk "github.com/kdar/golaunch/sdk/go"
+	"github.com/kdar/golaunch/sdk/go/plugin"
 )
 
 const (
