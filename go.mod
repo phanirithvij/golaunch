@@ -9,7 +9,7 @@ require (
 	github.com/atotto/clipboard v0.1.4
 	github.com/bmatcuk/doublestar v1.3.4
 	github.com/boltdb/bolt v1.3.1
-	github.com/fsnotify/fsnotify v1.4.9 // indirect
+	github.com/fsnotify/fsnotify v1.4.9
 	github.com/go-ole/go-ole v1.2.5
 	github.com/google/flatbuffers v2.0.0+incompatible
 	github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0
@@ -19,5 +19,4 @@ require (
 	github.com/smartystreets/assertions v1.2.0
 	github.com/spf13/cast v1.3.1
 	golang.org/x/sys v0.0.0-20210611083646-a4fc73990273
-	gopkg.in/fsnotify.v1 v1.4.7
 )

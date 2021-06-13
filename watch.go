@@ -13,7 +13,7 @@ import (
 
 	"github.com/bmatcuk/doublestar"
 
-	"gopkg.in/fsnotify.v1"
+	"github.com/fsnotify/fsnotify"
 )
 
 func throttle(limit time.Duration) func(func()) bool {
