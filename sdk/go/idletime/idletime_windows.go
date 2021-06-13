@@ -11,6 +11,7 @@ type lastInputInfo struct {
 }
 
 /// https://github.com/darwin/chromium-src-chrome-browser/blob/master/idle_win.cc
+// Updated link https://github.com/chromium/chromium/blob/master/ui/base/idle/idle_win.cc
 func Get() (time.Duration, error) {
 	var lii lastInputInfo
 	lii.cbSize = uint32(unsafe.Sizeof(lii))
