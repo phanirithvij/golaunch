@@ -80,7 +80,7 @@ func (p *Plugin) Init(m sdk.Metadata) {
 		log.Fatal(err)
 	}
 
-	for i, _ := range cfg.Sources {
+	for i := range cfg.Sources {
 		if len(cfg.Sources[i].Extensions) == 0 {
 			cfg.Sources[i].Extensions = defaultExtensions
 		}
@@ -133,7 +133,7 @@ func (p *Plugin) Init(m sdk.Metadata) {
 
 func (p *Plugin) Query(q string) {
 	results := p.catalog.Query(q)
-	if results != nil && len(results) > 0 {
+	if len(results) > 0 {
 		p.client.Call("queryResults", results)
 		return
 	}
@@ -145,6 +145,7 @@ func (p *Plugin) Action(a sdk.Action) {
 	if a.Type == "contextmenu" {
 		switch a.Name {
 		case "Copy path":
+			// TODO replace with better clipboard which supports images as well https://stackoverflow.com/a/66306423/8608146
 			clipboard.WriteAll(a.QueryResult.Path)
 		case "Open containing folder":
 			p.system.OpenFolder(filepath.Dir(a.QueryResult.Path))
